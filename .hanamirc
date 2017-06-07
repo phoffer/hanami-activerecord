@@ -1,0 +1,4 @@
+project=hanami_activerecord
+architecture=container
+test=minitest
+template=erb
