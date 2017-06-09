@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Email</th>
+  </thead>
+  <tbody>
+    <% users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total: <%= users.size %></td>
+    </tr>
+  </tfoot>
+</table>
