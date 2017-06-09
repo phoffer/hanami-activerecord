@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'hanami/setup'
+require 'erb'
 require 'active_record'
 db_config = YAML::load(ERB.new(File.read('config/database.yml')).result)[ENV['RACK_ENV']]
 require_relative '../lib/hanami_activerecord/entities/application_record'
