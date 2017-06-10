@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'hanami',       '~> 1.0'
-gem 'hanami-model', '~> 1.0'
-
+gem 'activerecord', '~> 5.1.0'
+gem 'active_record_migrations', '~> 5.0.2.1', require: false
 gem 'pg'
 
 group :development do
